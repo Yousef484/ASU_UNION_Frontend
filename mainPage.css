@@ -1,0 +1,394 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#F0ECE5;
+}
+
+.container {
+  flex: 1;
+}
+
+
+.navbar{
+    background-color:#161A30;
+}
+.navbar-brand{
+    font-family: 'Lilita One', sans-serif;
+    color: rgb(253, 244, 244);
+    font-size: 2.3em;
+    transition: color 0.4s  ease-in
+}
+.nav-link{
+    /* font-family: 'Gruppo', sans-serif; */
+    font-family: 'Afacad', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(253, 244, 244);
+    transition: color 0.4s  ease-in
+}
+.navbar-toggler, .navbar-brand:hover, .nav-link:hover, .navbar-brand:focus, .nav-link:focus, #filterDropdown:focus, #filterDropdown:active{
+    color:rgb(241, 162, 92) ;
+ }
+  
+.dropdown-menu{
+  background-color: #161A30;
+  padding:10px;
+  border: 1px solid rgb(241, 162, 92);
+}
+
+.dropdown-menu .form-check-label{
+    font-family: 'Afacad', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(253, 244, 244);
+} 
+.dropdown-menu .form-check-input:checked{
+  background-color: rgb(241, 162, 92);
+  border-color: white;
+  border-radius: 50%;
+}
+
+.dropdown-menu [type="checkbox"]:checked + label {
+  color: rgb(241, 162, 92)
+}
+
+.btn-filter{
+  font-family: 'Afacad', sans-serif;
+  border: 2px solid rgb(241, 162, 92);
+  border-radius: 10px;
+  background-color: white;
+  /* text-align: center; */
+  font-weight: 500;
+  color:rgb(241, 162, 92);
+  transition: color .4s ease-in-out ,background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+.btn-filter:hover{
+  border-color: white;
+  color:white;
+  background-color: rgb(241, 162, 92);
+}
+
+
+
+ #liveAlertPlaceholder{
+  font-family: 'Afacad', sans-serif;
+} 
+
+
+.modal-content{
+  font-family: 'Afacad', sans-serif;
+  color:white;
+  background-color: #161A30;
+  border-radius: 7px;
+  border: 1px solid rgb(243, 226, 211);
+  -webkit-box-shadow: 15px 4px 46px 4px rgba(89,87,84,0.56);
+  -moz-box-shadow: 15px 4px 46px 4px rgba(89,87,84,0.56);
+  box-shadow: 15px 4px 46px 4px rgba(89,87,84,0.56);
+}
+
+.checked-radio:checked {
+  background-color:rgb(241, 162, 92);
+  border-color: white;
+}
+
+#postBtn{
+    
+  background-color: rgb(243, 194, 152);
+  color:#161A30;
+  font-weight: 600 ;
+  border: .5px solid black;
+  padding-right:30px;
+  padding-left:30px;
+  transition: color 0.4s ease-in, background-color 0.4s  ease-in , border-color 0.4s  ease-in;
+}
+.modal-header .btn-close{
+color: white;
+background-image: url(Assets/cross.png); 
+background-size: contain;
+}
+
+#postBtn:hover{
+  background-color:rgb(241, 162, 92) ;
+  border-color: white;
+  color:white
+}
+
+#closeBtn{
+    
+  background-color: white;
+  color:#161A30;
+  font-weight: 600 ;
+  border: .5px solid red;
+  padding-right:30px;
+  padding-left:30px;
+  transition: color 0.4s ease-in, background-color 0.4s  ease-in , border-color 0.4s  ease-in;
+}
+
+#closeBtn:hover{
+  background-color:red;
+  border-color: white;
+  color:white
+}
+
+.mainCard{
+  background-color:#F0ECE5 !important;
+  border: none !important;
+}
+
+.mainCard .card-title{
+  font-family: 'Afacad', sans-serif;
+  font-weight: bold;
+}
+.mainCardSpan{
+  font-size: medium;
+}
+.mainCardBtn{
+text-decoration: none;
+background-color:rgb(241, 162, 92) ;
+color:#161A30;
+font-weight: 600 ;
+border-radius: 4px;
+border: none;
+padding-right:30px;
+padding-left:30px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.mainCard .card-text{
+  text-align: center;
+  font-family: 'Afacad', sans-serif;
+  font-size: x-large;
+}
+
+#NofifyModal  .modal-footer {
+  display: flex;
+  justify-content: center;  /* Center buttons horizontally */
+}
+.NotifyModalBtn {
+  font-family: 'Afacad', sans-serif;
+  font-weight: 600;
+  background-color:rgb(241, 162, 92) ;
+  color:#161A30;
+  border-radius: 4px;
+  padding: 10px 14px ;
+}
+
+ .hide{
+  display: none;
+ }
+.card{
+    background-color: rgba(207, 198, 198, 0.329);
+    border: 4px solid rgb(243, 226, 211);
+}
+.card .hstack #loveSign{
+    color:#161A30;
+    transition: color 0.2s  ease-in-out;
+}
+.card .hstack #loveSign:hover{
+    color:red
+}
+
+#LikesNum{
+  color: #161A30;
+  font-family: 'Afacad', sans-serif;
+  font-size: 15px;
+  margin-right: 6px;
+  position: relative;
+  font-style: italic;
+}
+
+#bookmarkSign{
+    color:#161A30;
+    transition: color 0.2s  ease-in-out;
+}
+#bookmarkSign:hover{
+   color: rgb(247, 247, 25);
+}
+
+.card .hstack #loveSign.red{
+    color: red;
+}
+
+#bookmarkSign.yellow{
+    color:yellow;
+}
+
+.card-title{
+    font-family: 'Afacad', sans-serif;
+    font-style: italic;
+    font-weight:700;
+    font-size: 2em;
+    color: #31304D;
+}
+.card-text{
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
+    color: #31304D;
+}
+#jobInfo{
+    font-weight: bold;
+}
+
+#signature{
+  font-family:'Mrs Saint Delafield' ,cursive;
+  
+  font-size: medium;
+  font-weight: 900;;
+  font-size: 1.8em;
+}
+.submitBtn{
+  border-radius: .4rem;
+  padding:.7rem;
+  border-style: none;
+  text-decoration: none;
+  background-color: #161A30;
+
+  font-family: 'Afacad', sans-serif;
+  color:#F0ECE5;
+  transition: background-color 0.3s  ease-in , border-color 0.4s  ease-in;
+  border: 2px solid rgb(243, 226, 211);
+  
+}
+.submitBtn:hover{
+    background-color:rgb(4, 77, 4);
+    border: 2px solid #161A30;
+    color:rgb(243, 226, 211);
+}
+
+#noPosts{
+  font-family: 'Afacad', sans-serif;;
+  font-size: 3em;
+  font-weight: 900;
+  color: #161A30;
+}
+
+.previous , .next{
+  /* font-family: 'Bebas Neue', sans-serif; */
+  font-family: 'Afacad', sans-serif;
+  border: 2px solid black;
+  border-radius: 3px;
+  }
+
+.next{
+  color:white;
+  border-color:#a3a29f;
+  background-color:#161A30;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+.previous{
+  color:#161A30;
+    border-color:#161A30;
+    background-color:#a3a29f;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    text-decoration: none;
+}  
+
+.disabledBtn{
+  color:#161A30;
+  border-color:#B6BBC4;
+  background-color:#F0ECE5;
+  pointer-events:none;
+}
+ 
+
+footer{
+   background-color: #161A30;
+   margin-top: auto;
+}
+
+.navbar-brand-footer{
+    font-family: 'Lilita One', sans-serif;
+    color: rgb(253, 244, 244);
+    font-size: 5em;
+    text-decoration: none;
+    
+}
+#imgBrand{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: 11px;
+}
+
+.navbar-brand-footer:hover{
+    color:rgb(241, 162, 92) ;
+    transition: color 0.4s  ease-in
+  }
+
+  .brand-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #myGmail{
+    font-family: 'Gruppo', sans-serif;
+    font-size: 1em;
+    color: rgb(253, 244, 244);
+  }
+
+
+
+  #mainHeader{
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 4em;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+
+  }
+
+
+  @media (min-width: 768px) {
+    .rounded-md-and-above {
+        border-top-right-radius: 25px; 
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 8px; 
+        border-bottom-left-radius: 8px;
+        border: 2px solid #161A30;
+    }
+    
+  
+    
+  }
+  @media (max-width: 768px) {
+    .rounded-md-and-above {
+        border-top-right-radius: 8px; 
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 8px; 
+        border-bottom-left-radius: 20px;
+        border: 2px solid #161A30;
+    }
+    .navbar-brand-footer{
+      font-size: 3em;
+    }
+    #imgBrand{
+      width: 50px;
+      height: 50px;
+    }
+    #signature{
+      font-size:1em
+    }
+  }
+
+
+  

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bebas+Neue&family=Lilita+One&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mainPage.css ">
+
+  <title>ASU UNION</title>
+</head>
+
+<body>
+
+ 
+
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top d-flex">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="mainPage.html" onclick="MainPageLoad()">ASU UNION <img src="Assets/hacker (2).png" alt="---" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuItems"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainMenuItems">
+          <div class="navbar-nav">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="filterDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                FILTER POSTS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                <li >
+                  <div class="form-check">
+                    <input type="checkbox" id="backendCheckbox" name="Backend" class="form-check-input" />
+                    <label for="backendCheckbox" class="form-check-label" onclick="StopPropagation(event)">Backend</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="frontendCheckbox" name="Frontend" class="form-check-input" />
+                    <label for="frontendCheckbox" class="form-check-label" onclick="StopPropagation(event)">Frontend</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="androidCheckbox" name="Android" class="form-check-input" />
+                    <label for="androidCheckbox" class="form-check-label" onclick="StopPropagation(event)">Android</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="flutterCheckbox" name="Flutter" class="form-check-input" />
+                    <label for="flutterCheckbox" class="form-check-label" onclick="StopPropagation(event)">Flutter</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="iosCheckbox" name="IOS" class="form-check-input" />
+                    <label for="iosCheckbox" class="form-check-label" onclick="StopPropagation(event)">IOS</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="uiuxCheckbox" name="UI/UX" class="form-check-input" />
+                    <label for="uiuxCheckbox" class="form-check-label" onclick="StopPropagation(event)">UI/UX</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="cyberSecurityCheckbox" name="Cyber Security" class="form-check-input" />
+                    <label for="cyberSecurityCheckbox" class="form-check-label" onclick="StopPropagation(event)">Cyber Security</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="machineLearingCheckbox" name="Machine Learning" class="form-check-input" />
+                    <label for="machineLearingCheckbox" style="font-size: 1em;" class="form-check-label" onclick="StopPropagation(event)">Machine Learning</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="gameDevelopmentCheckbox" name="Game Development" class="form-check-input" />
+                    <label for="gameDevelopmentCheckbox" style="font-size: .8em;" class="form-check-label" onclick="StopPropagation(event)">Game Development</label>
+                  </div>
+                </li>
+                <div class="row justify-content-center align-content-center align-items-center">
+                  <div class="col-md-6 col-xs-4">
+                <button class="btn btn-filter form-control" id="filterBtn">Filter</button>
+              </div>
+              </div>
+               </ul>
+            </div>
+            <a class="nav-link" href="bookmarks.html">BOOKMARKS</a>
+            <a class="nav-link" href="Suggestions.html">SUGGESTIONS</a>
+            <a class="nav-link" href="Bugs.html">BUGS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+
+
+
+
+  
+<div class="row my-5 text-center mx-0" id="noPosts">
+  <P>NO POSTS TO DISPLAY</P>
+</div>
+  
+<div class="container-fluid mt-5" id="mainCont">
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="row my-4 mx-0 justify-content-center text-center">
+    <div class="col-auto">
+      <a class="previous disabledBtn" href="#" id="prevBtn">Previous</a>
+    </div>
+
+    <div class="col-auto">
+      <a class="next" href="#" id="nextBtn">Next</a>
+    </div>
+  </div>
+
+
+  <footer class="py-4">
+    <div class="container">  
+      <div class="d-flex  justify-content-center mb-3">
+        <a class="navbar-brand-footer" href="#">ASU UNION<img src="Assets/hacker (2).png" alt="---" id="imgBrand"></a>
+      </div>
+      <div class="mb-3 d-flex justify-content-center">
+        <a target="_blank" href="https://www.facebook.com/yousef.ayman.927" class="text-light me-3"><i
+            class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://x.com/Yousef67980882?t=4eAG3SkCsynXEYq7xs5pfA&s=09" class="text-light me-3"><i
+            class="bi bi-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/yousef-ayman-a55a151b1/" class="text-light me-3"><i
+            class="bi bi-linkedin"></i></a>
+      </div>
+      <div class=" text-center align-content-center">
+        <p id="myGmail">yousefayman484@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+ 
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="bookmarks.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bebas+Neue&family=Gruppo&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mainPage.css">
+  <link rel="stylesheet" href="BugsAndSuggestations.css">
+  <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+  <title>Bugs</title>
+</head>
+
+<body>
+
+ 
+  
+
+
+
+  <div class="container-fluid mb-5">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-6 LeftSide">
+        <!-- left side of the screen -->
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-9">
+            <a class="Logo" href="mainPage.html">ASU UNION</a>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-9">
+            <p>This Website Application Aims To Help All Students To Tackel Thier First Internship By Giving The Authority To Everyone To Post Link Of Any Other's Internship Post So Everyone Can Benifit From Each Other And Remeber <span id="shining">Sharing Is Caring.</span></p>
+            <img src="Assets/hacker (2).png" alt="---" width="75px" height="75px">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 rightSide">
+        <!-- right side of the screen -->
+        <form class="row g-3 justify-content-center text-center" id="Form">
+          <div hidden id="hiddenDiv">Bug</div>
+          <div class="col-lg-11">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="UserName" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="col-lg-11">
+            <label for="description" class="form-label">Bug Description</label>
+            <textarea class="form-control" name="Bug" id="description" rows="3" placeholder="What Is The Bug" required></textarea>
+            <div class="invalid-feedback">Please describe the bug.</div>
+          </div>
+          <div class="col-lg-11 pt-2">
+            <button type="submit" class="btn form-control" id="sendBtn">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+  <script  type="module"  src="bugAndSuggestation.js"></script>
+</body>
+
+</html>
